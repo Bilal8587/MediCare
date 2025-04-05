@@ -1,4 +1,5 @@
 import React from "react"
+import pro from '../images/profile.jpeg'
 
 function ReviewCard({name, review, platform}) {
   return (
@@ -10,7 +11,7 @@ function ReviewCard({name, review, platform}) {
       </p>
       <div className="flex  mt-14 gap-5">
         <img
-          src="https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg="
+          src={pro}
           width={"50px"}
           height={"40px"}
           className="rounded-full"

@@ -1,6 +1,5 @@
 import React from "react"
 import Button from "./Button"
-import image from '../images/poster.jpg'
 function HeroSection() {
   return (
     <div className="flex  gap-10 relative mt-[-20rem]  h-[100%] mb-14">
