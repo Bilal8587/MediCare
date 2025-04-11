@@ -3,21 +3,29 @@ import React, { useState } from "react"
 import { FaFacebookF } from "react-icons/fa6"
 import { FaGoogle } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
+import "../styles/footer.css"
+import { RiMenuFold3Fill } from "react-icons/ri"
+import { RiMenuFold4Fill } from "react-icons/ri"
 
 function Footer() {
   const [active, setActive] = useState("Home")
+  const [sideBarMenu, setSideBarMenu] = useState(false)
+
+  const sideBarFun = () => {
+    setSideBarMenu(!sideBarMenu)
+  }
 
   const activeBar = value => {
     setActive(value)
   }
 
   return (
-    <div className="w-screen ml-[-8rem] h-80">
-      <div className="bg-[#F7FBFF] px-32 py-12 flex items-center justify-between ">
-        <div className="text-3xl font-bold text-[#0073ff] ">
-          Medi<span className="text-[#ff9f6a]">Care+</span>
+    <div className="footer_section">
+      <div className="upper_footer">
+        <div className="footer_logo">
+          Medi<span>Care+</span>
         </div>
-        <div className="flex gap-12 text-sm text-[#0073ff]">
+        <div className="footer_links">
           <Link
             to={"/"}
             onClick={e => activeBar(e.target.text)}
@@ -47,20 +55,23 @@ function Footer() {
             News
           </Link>
         </div>
+        <div onClick={sideBarFun} className="footer_sidebar_icon">
+          {sideBarMenu ? <RiMenuFold4Fill /> : <RiMenuFold3Fill />}
+        </div>
       </div>
-      <div className="bg-[#ECF4FF] px-32 h-[11.3rem] py-10">
-        <div className="flex  gap-3">
-          <div className="bg-white p-4 rounded-full text-[#7F7F7F] text-lg">
+      <div className="lower_footer">
+        <div>
+          <div className="footer_icon">
             <FaFacebookF />
           </div>
-          <div className="bg-white p-4 rounded-full text-[#7F7F7F] text-lg">
+          <div className="footer_icon">
             <FaGoogle />
           </div>
-          <div className="bg-white p-4 rounded-full text-[#7F7F7F] text-lg">
+          <div className="footer_icon">
             <FaTwitter />
           </div>
         </div>
-        <p className="text-[#667C94] text-sm mt-5">©2023 - 011BQ </p>
+        <p className="copyright ">©2023 - 011BQ </p>
       </div>
     </div>
   )

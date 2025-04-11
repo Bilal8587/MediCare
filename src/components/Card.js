@@ -1,10 +1,18 @@
 import React from "react"
+import { MdKeyboardArrowRight } from "react-icons/md"
 
 function Card({icon, name}) {
   return (
-    <div className="bg-white p-6 w-64 h-72 rounded-xl hover:bg-[#007EF3] hover:text-white  shadow-xl hover:h-80 ">
-      <p className="text-[#007DF2] text-[8rem] hover:text-white ">{icon}</p>
-      <h2 className="font-bold text-xl mt-7">{name}</h2>
+    <div className="card">
+      <p className="icon ">{icon}</p>
+      <h2 className="cardTitle">{name}</h2>
+
+      <div className="learn_more">  
+      <p>LEARN MORE</p>
+      <div className="arrow-icon">
+        <MdKeyboardArrowRight />
+      </div>
+    </div>
     </div>
   )
 }

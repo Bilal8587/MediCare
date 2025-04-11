@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import ReviewCard from "./ReviewCard"
 import axiox from "axios"
+import '../styles/customer.css'
 
 function Customer() {
   const [user, setUser] = useState([])
@@ -32,17 +33,17 @@ function Customer() {
   },[])
 
   return (
-    <div className=" py-20">
-      <h2 className="text-5xl font-semibold text-[#003B79]">
+    <div className=" customer_section">
+      <h2 className="title">
         What Our Customers Say
       </h2>
-      <div className="flex justify-between overflow-auto gap-10 scrollbar">
+      <div className="customer_review">
             {
             user.slice(0,5).map((item) => (
                 <ReviewCard key={item.ID } name={item.Name} review={item.Reviews} platform={item.Platform}/>
             ))
         }
-        {/* <ReviewCard /> */}
+       
       </div>
       
     </div>

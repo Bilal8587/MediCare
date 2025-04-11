@@ -1,9 +1,12 @@
 import React from 'react'
+import '../styles/navbar.css'
 
 function Button({name}) {
   return (
     <div>
-      <button className="bg-[#0073ff] text-white font-bold px-12 py-4 rounded-[2rem]">{name}</button>
+      <button className="btn_component">
+        {name}
+      </button>
     </div>
   )
 }

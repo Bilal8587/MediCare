@@ -1,0 +1,253 @@
+.customer_section {
+  background-color: #f8fdff;
+  padding: 5rem;
+}
+
+.customer_section .title {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 78px;
+  color: #003b79;
+}
+
+.customer_review {
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.customer_review .customer_card {
+  width: 550px;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0 4px 50px #00000026;
+  margin-top: 3rem;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.customer_card .queat {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #007ff4;
+  padding: 0.4rem 1.8rem;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  margin-top: -4rem;
+  margin-left: 28rem;
+}
+
+.customer_card .description {
+  font-size: 22px;
+  font-weight: 400;
+  color: #002348;
+}
+
+.information {
+  display: flex;
+  gap: 1rem;
+}
+
+.information img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.information h3 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #002348;
+}
+
+.information p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #002348;
+  margin-top: 8px;
+}
+
+@media (max-width: 1140px) {
+  .customer_review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .customer_review .customer_card {
+    width: 450px;
+    height: 300px;
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+  }
+
+  .customer_card .queat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 22rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .customer_review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .customer_review .customer_card {
+    width: 350px;
+    height: 380px;
+    padding: 2rem 1rem;
+  }
+
+  .customer_card .queat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 17.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .customer_review {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .customer_review .customer_card {
+    width: 550px;
+    height: 350px;
+    margin-top: 3rem;
+    padding: 2rem 3rem;
+  }
+
+  .customer_card .queat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 28.7rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .customer_section .title {
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .customer_review {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .customer_review .customer_card {
+    width: 550px;
+    height: 350px;
+    margin-top: 3rem;
+    padding: 2rem 3rem;
+  }
+
+  .customer_card .queat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 28.7rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .customer_section .title {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .customer_review {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .customer_review .customer_card {
+    width: 450px;
+    height: 350px;
+    margin-top: 3rem;
+    padding: 2rem 3rem;
+  }
+
+  .customer_card .queat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 22rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .customer_section .title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .customer_review {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .customer_review .customer_card {
+    width: 400px;
+    height: 370px;
+  }
+
+  .customer_card .queat {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 19rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .customer_section {
+    padding: 0 3rem;
+  }
+
+  .customer_card .description {
+    font-size: 20px;
+  }
+  .customer_section .title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .customer_review {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .customer_review .customer_card {
+    width: 300px;
+    height: 450px;
+    padding: 2rem 1rem;
+  }
+
+  .customer_card .queat {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -4rem;
+    margin-left: 15rem;
+  }
+}
