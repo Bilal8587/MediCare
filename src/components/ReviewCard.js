@@ -5,9 +5,7 @@ function ReviewCard({ name, review, platform }) {
   return (
     <div className="customer_card ">
       <div className="queat">"</div>
-
       <p className="description">{review}</p>
-
       <div className="information">
         <img
           src={pro}

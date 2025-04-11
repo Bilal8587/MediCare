@@ -41,8 +41,8 @@ function Specialist() {
         <img src={circle} />
       </div>
       <div className="uper">
-        <h2 className="">We Have The Best Specialist</h2>
-        <p className="">
+        <h2>We Have The Best Specialist</h2>
+        <p>
           We have a wide experience in experience design and strategy,
           <br />
           with locally-rooted knowledge.

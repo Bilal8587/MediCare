@@ -54,7 +54,7 @@
 //             </Link>
 //             <Button name={"Contact"} />
 //           </div>
-          
+
 //         </div>
 //       </div>
 //     </div>
@@ -63,17 +63,14 @@
 
 // export default Navbar
 
-
 import React, { useState } from "react"
 import "../styles/navbar.css"
 import { Link } from "gatsby"
 import Button from "./Button"
 import { IoMdMenu } from "react-icons/io"
 
-
 function Navbar() {
-
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -87,17 +84,15 @@ function Navbar() {
           <div className="logo">
             Medi<span>Care+</span>
           </div>
-          <div className={`${isOpen ? 'links active' : 'links'}`}>
+          <div className={`${isOpen ? "links active" : "links"}`}>
             {/* links */}
-            <Link to="" id="home">
-              Home
-            </Link>
-            <Link to="">About </Link>
-            <Link to="">Service</Link>
-            <Link to="">News </Link>
+            <Link to="/">Home</Link>
+            <Link to="/">About </Link>
+            <Link to="/">Service</Link>
+            <Link to="/">News </Link>
             <Button name={"Contact"} />
           </div>
-          
+
           <div className="sidebar_icon" onClick={toggleMenu}>
             <IoMdMenu />
           </div>
