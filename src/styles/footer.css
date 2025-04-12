@@ -95,4 +95,7 @@
     justify-content: center;
     align-items: center;
   }
+  .lower_footer p{
+    text-align: center;
+  }
 }
